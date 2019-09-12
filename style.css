@@ -1,7 +1,12 @@
 body { 
 margin: 0; 
 background-color: #FFB6C1;
+margin: 0px;
+padding: 0px;
+background-repeat: no-repeat;
+background-size: cover;
 }
+
 
 #header {
     background-color: #DDA0DD;
@@ -9,63 +14,22 @@ background-color: #FFB6C1;
 }
 
 #secondbg {
-    position: fixed;
-    left: 15%;
-    width: 70%;
-}
-
-#link {
-    
-    position:absolute;
-    top: 80;
-    right: 30;
-    
-}
-#link1 {
-    
-    position:absolute;
-    top: 130;
-    right: 90;
-}
-
-#link1size {
-    width: 32;
-    height: 32;
-    
-}
-
-#link2 {
-    
-    position:absolute;
-    top: 170;
-    right: 90;
-}
-
-#link2size {
-    width: 32;
-    height: 32;
-    
+	position: fixed;
+	opacity:0.8;
+	width: 70%;
+	left: 15%;
 }
 
 
-#link3 {
-    
-    position:absolute;
-    top: 210;
-    right: 90;
-}
-
-#link3size {
-    width: 32;
-    height: 32;
-    
+#profile {
+    position: fixed; 
+    width: 128px;
+    height: 128px;
+    top: 165;
+    left: 160;
 }
 
 
-#name {
-    position: absolute;
-    left: 300;
-}
 
 #quotes {
   font-family: forte Regular;
@@ -84,8 +48,3 @@ right: 300;
 top: -90;
 }
 
-#profile {
-    position: absolute; 
-    top: 165;
-    left: 160;
-}
