@@ -1,16 +1,22 @@
 body { 
-margin: 0; 
-background-color: #FFB6C1;
-margin: 0px;
-padding: 0px;
-background-repeat: no-repeat;
-background-size: cover;
+ 
+    background-color: #FFB6C1;
+    margin: 0px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
 #header {
     background-color: #DDA0DD;
     left: 200;
+}
+
+.name {
+    position: absolute;
+    top: 190;
+    left: 500;
 }
 
 #secondbg {
@@ -35,16 +41,98 @@ background-size: cover;
   font-family: forte Regular;
   position: absolute;
   left: 300;
-  top: 500;
+  top: 350;
   border-style: solid;
-  border-color: #B22222;
+  border-color: palevioletred;
 }
 
-#dendan18 {
-position: absolute;
-min-width: 40%;
-min-height: 20%;
-right: 300;
-top: -90;
+
+.button {
+  position:absolute;
+  top: 250;
+  left: 500;
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid purple;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
 }
 
+.button2 {
+  position:absolute;
+  top: 250;
+  left: 700;
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid purple;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.button:hover {
+  background: pink;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: rgb(255, 176, 235);
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}
