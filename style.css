@@ -9,8 +9,12 @@ body {
 
 
 #header {
+    background-image: url("skybg.jpg");
     background-color: #DDA0DD;
     left: 200;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .name {
@@ -149,4 +153,10 @@ body {
   .popup{
     width: 70%;
   }
+}
+
+#demoVideo {
+position: absolute;
+right: 350;
+top: 280;
 }
