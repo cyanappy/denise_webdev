@@ -25,8 +25,8 @@ background-size: cover;
     position: fixed; 
     width: 128px;
     height: 128px;
-    top: 165;
-    left: 160;
+    top: 190;
+    left: 300;
 }
 
 
@@ -35,7 +35,7 @@ background-size: cover;
   font-family: forte Regular;
   position: absolute;
   left: 300;
-  top: 170;
+  top: 500;
   border-style: solid;
   border-color: #B22222;
 }
